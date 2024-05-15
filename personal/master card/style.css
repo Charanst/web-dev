@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Orbitron:wght@400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.main {
+    box-sizing: border-box;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    position: relative;
+
+
+}
+
+
+
+.bg-img {
+    border-radius: 2rem;
+    height: 350px;
+    width: 500px;
+    position: relative
+}
+
+.chip {
+    height: 80px;
+    position: absolute;
+    /* Position chip absolutely within the bg-img container */
+    top: 20px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    z-index: 2;
+    /* Ensure chip appears above the background image */
+    border-radius: 1rem;
+
+}
+
+.logo{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.mscard{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    top: 47px;
+    left: 110px;
+    z-index: 2;
+}
+
+.cardno{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    top: 150px;
+    left: 20px;
+    z-index: 2;
+}
+
+.number{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    top: 200px;
+    left: 20px;
+    z-index: 2;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    top: 300px;
+    left: 20px;
+    z-index: 2;
+}
+
+.valid{
+    position: absolute;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    top: 260px;
+    right: 35px;
+}
+
+.date{
+    position: absolute;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    top: 290px;
+    right: 55px;
+}
