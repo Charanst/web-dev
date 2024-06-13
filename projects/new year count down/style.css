@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+body {
+    font-family: "Lobster", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("https://images.unsplash.com/photo-1518165307141-a4651f36952a?q=80&w=1377&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    color: rgb(58, 189, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.year {
+    letter-spacing: 2px;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.countdown {
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown div {
+    margin: 0px 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .35em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+
+.countdown #day::before {
+    content: "Days";
+}
+
+.countdown #hour::before {
+    content: "Hours";
+}
+
+.countdown #minutes::before {
+    content: "Minutes";
+}
+
+.countdown #seconds::before {
+    content: "Seconds";
+}
