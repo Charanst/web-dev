@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="username">username</label>
+        <input type="text" id="username" minlength="6" maxlength="15" placeholder="Just your name"> <br>
+
+        <!-- multipart/form-data is used for forms with file uploads. Encodes the form data as a multipart MIME message, allowing files and other data to be sent together in a single request -->
+
+        <!-- required: this will not let us submit the form when the input field is empty -->
+        <!-- minlength and maxlength: just as name says -->
+
+        <!-- GET is suitable for retrieving data and idempotent operations, while POST should be used for submitting data that modifies the server's state, handles sensitive information, or involves large data or file uploads. Understanding these distinctions helps in designing HTML forms that are efficient, secure, and compliant with best practices. -->
+
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="8"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"> <br>
+
+        <label for="mobile">Mobile number</label>
+        <input type="tel" id="mobile" pattern="[0-9]{10}-[0-9]{3}"> <br>
+
+        <!-- pattern:this will only accept the form if the input is entered in the specified pattern. In this example we are required to enter the number is 0123456789-123 pattern -->
+
+        <label for="birthday">DOB</label>
+        <input type="date" id="birthday"><br>
+
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" min="0"> <br>
+
+        <!-- min: by default, the number input type can go below 0 i,e; -1, -2 etc. To avoid this, we use min attribute and set the value to 0. This can also be use to specify the minimun order quantity on a website. -->
+
+        <label for="gender">gender:</label>
+
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender"><br>
+
+        <!-- If we have to select anyone of the available option, then we can use radio. We bind the label of radio with another label as above. This will be like a container and under gender container we can only select male or female -->
+
+        <label for="payment">payment</label>
+
+        <select id="payment">
+            <option value="mastercard">mastercard</option>
+            <option value="visa">visa</option>
+            <option value="COD">COD</option>
+        </select> <br>
+
+        <!-- for drop down we have to use select and followed by option. select will be bound with a label and option will have value-->
+
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox"><br>
+
+        <label for="comment">comment</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <!-- textarea is use to enter a large text block usually for comment/reviews and we can adjust the size of the comment box with the help of rows and cols. -->
+
+        <label for="file">file</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+
+        <!-- inorder to upload file, we can use input type to file and to limit the type of file we can upload, we use accept option. We can also use in this format accept=".pdf, .doc, .docx" -->
+
+        <input type="reset"><br>
+
+        <input type="submit"><br>
+    </form>
+</body>
+
+</html>
