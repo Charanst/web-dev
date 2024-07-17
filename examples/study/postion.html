@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+        }
+
+        #static {
+            position: static;
+            background-color: red;
+            top: 100px;
+            left: 200px;
+            text-align: center;
+        }
+
+        #relative {
+            text-align: center;
+            position: relative;
+            top: 100px;
+            left: 200px;
+            background-color: aqua;
+        }
+
+        #absolute {
+            text-align: center;
+            position: relative;
+            background-color: rgb(224, 76, 76);
+            top: 100px;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+        }
+
+        #fixed {
+            text-align: center;
+            left: 300px;
+            background-color: rgb(187, 16, 110);
+            position: fixed;
+        }
+
+        #sticky {
+            text-align: center;
+            position: sticky;
+            background-color: rgb(35, 196, 24);
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fixed">fixed</div>
+
+    <!-- fixed to the viewport -->
+    <div id="static">Static</div>
+
+    <!-- static is default and top bottom right left doesnt work-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <div id="sticky">sticky</div>
+    <!-- CSS positioning property that allows an element to "stick" to a specific position on the screen when you scroll. It blends the behavior of position: relative; and position: fixed;. -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <div id="relative">relative</div>
+    <!-- top left bottom right are adjusted based on the normal position ie its relative position -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <div id="absolute">ancestor
+        <div id="box">child</div>
+    </div>
+
+    <!-- top bottom right left are adjusted based on the ancestor or containing elements position -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi nisi autem aut voluptate quas esse
+        temporibus at qui facere in ex magni necessitatibus corporis blanditiis ducimus earum, nobis eligendi.</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
