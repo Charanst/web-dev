@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: aliceblue;
+        }
+
+        /* without border-collaple, each th td will be treated as separate cell. To avoid this, we use  border-collapse. */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- thead is used to specify elements that will be used as heading title
+tbody is the body of the table where data is inserted.
+tr is table row and under this we enter td or th. th is table heading and td is table data. -->
+
+    <!-- rowspace and colspace is used with td-table data and this can usually affect the table layout. need to be used wisely. -->
+
+    <h2>SIMPLE TABLE</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cst</td>
+                <td>28</td>
+                <td>Bengaluru</td>
+            </tr>
+
+            <tr>
+                <td>TGLTN</td>
+                <td>29</td>
+                <td>Chennai</td>
+            </tr>
+
+            <tr>
+                <td>Mike</td>
+                <td>28</td>
+                <td>TVM</td>
+            </tr>
+    </table>
+    </tbody>
+
+</body>
+
+</html>
